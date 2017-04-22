@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.view {
+    margin: 0 auto;
+    background-color: #eee;
+    position: absolute;
+    border-radius: 20px;
+    -webkit-transform: scale(0.7);
+}
+@media (max-width: 767px) {
+    .view{
+        -webkit-transform: scale(0.3);
+    }
+}
+@media (max-width: 922px) and (min-width: 767px) {
+    .view{
+        -webkit-transform: scale(0.5);
+    }
+    
+}
+
+
+.box {
+    /*旋转*/
+    /*animation: name规定需要绑定到选择器的keyframe名称 duration规定完成动画所花费的时间，以秒或毫秒计 timing-function规定动画的速度曲线 delay规定在动画开始之前的延迟 iteration-count规定动画应该播放的次数 direction规定是否应该轮流反向播放动画;*/
+    /*-webkit-animation:BoxRotate 3s ease-in-out infinite;*/
+    -webkit-animation-name: BoxRotate;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    /*动画旋转基准*/
+    -webkit-transform-origin: 400px 400px 0px;
+    /*开启3D*/
+    -webkit-transform-style: preserve-3d;
+    /*观察基角度*/
+    /*-webkit-perspective: 886;
+    -webkit-perspective-origin: 121px 54px;*/
+}
+
+@-webkit-keyframes BoxRotate {
+    16% {
+        -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    33% {
+        -webkit-transform: rotateY(-90deg) rotateX(135deg);
+    }
+    50% {
+        -webkit-transform: rotateY(225deg) rotateZ(135deg);
+    }
+    66% {
+        -webkit-transform: rotateY(135deg) rotateX(135deg);
+    }
+    83% {
+        -webkit-transform: rotateX(135deg);
+    }
+}
+
+
+/*不同颜色表面的外轮廓*/
+
+.red-surfaces,
+.blue-surfaces,
+.green-surfaces,
+.white-surfaces,
+.orange-surfaces,
+.yellow-surfaces {
+    height: 330px;
+    width: 330px;
+    position: absolute;
+    border-radius: 5px;
+    top: 235px;
+    left: 235px;
+}
+
+
+/*表面的3D位置*/
+
+.red-surfaces {
+    -webkit-transform: rotateX(-90deg) translateZ(165px);
+}
+
+.blue-surfaces {
+    -webkit-transform: rotateX(0deg) translateZ(165px);
+}
+
+.green-surfaces {
+    -webkit-transform: rotateX(90deg) translateZ(165px);
+}
+
+.white-surfaces {
+    -webkit-transform: rotateY(90deg) translateZ(165px);
+}
+
+.orange-surfaces {
+    -webkit-transform: rotateY(-90deg) translateZ(165px);
+}
+
+.yellow-surfaces {
+    -webkit-transform: rotateX(-180deg) translateZ(165px);
+}
+
+
+/*内盒子样式*/
+
+.red-surfaces>div,
+.blue-surfaces>div,
+.green-surfaces>div,
+.white-surfaces>div,
+.orange-surfaces>div,
+.yellow-surfaces>div {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 5px solid rgba(170, 170, 170, 0.9);
+    position: absolute;
+}
+
+
+/*内盒子颜色*/
+
+.red-surfaces>div {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.blue-surfaces>div {
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+.green-surfaces>div {
+    background-color: rgba(0, 255, 0, 0.8);
+}
+
+.white-surfaces>div {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.orange-surfaces>div {
+    background-color: rgba(255, 165, 0, 0.8);
+}
+
+.yellow-surfaces>div {
+    background-color: rgba(255, 255, 0, 0.8);
+    -webkit-transform: translateZ(90px);
+}
+
+
+/*内盒子定位*/
+
+#one {
+    left: 0px;
+    top: 0px;
+}
+
+#two {
+    left: 110px;
+    top: 0px;
+}
+
+#three {
+    left: 220px;
+    top: 0px;
+}
+
+#four {
+    left: 0px;
+    top: 110px;
+}
+
+#five {
+    left: 110px;
+    top: 110px;
+}
+
+#six {
+    left: 220px;
+    top: 110px;
+}
+
+#seven {
+    left: 0px;
+    top: 220px;
+}
+
+#eight {
+    left: 110px;
+    top: 220px;
+}
+
+#nine {
+    left: 220px;
+    top: 220px;
+}
+

@@ -1,0 +1,42 @@
+body,
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+#area {
+    margin: 10px auto;
+    border: 1px solid #000;
+    background: #fff;
+    position: relative;
+}
+
+#area div {
+    width: 15px;
+    height: 15px;
+    background: #0f0;
+    position: absolute;
+}
+
+#area span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    background: #f00;
+}
+
+.info {
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+p,
+input {
+    margin: 0 20px;
+    padding: 5px 10px;
+    display: inline;
+}

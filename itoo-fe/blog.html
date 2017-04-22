@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/37509/58e6030ef629da0654e3e888.css' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css">
+	<script type="text/javascript" src="layui/layui.js"></script>
+	<title>MYblog</title>
+</head>
+<body>
+<!-- 导航条 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="ITOO_introduce.html">ITOO</a>
+    </div>
+  </div> 
+</nav>
+
+<div class="blog_header">
+	<img src="img/blog.jpg" class="img-responsive" alt="Responsive image">
+</div>
+
+<!-- 写文章部分 -->
+<div class="content">
+	<input type="text" name="" placeholder="请输入标题">
+	<textarea id="text" style="display: none;"></textarea>
+	<button type="submit" class="btn btn-success">发布文章</button>
+</div>
+
+<!-- 底部 -->
+<footer>
+  <div>
+  <ul class="list-inline">
+    <li class="li1"><a href="team.html">关于我们</a></li>
+    <li><a href="serve.html">联系我们</a></li>
+    <li><a href="login.html">立即使用</a></li>
+    <li><a href="function.html">产品应用</a></li>
+    <li><a href=".html">分享</a></li>
+  </ul>
+  </div>
+  <div class="text-center">
+    <p>版权所有：ITOO</p>
+    <p>Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2017&nbsp;&nbsp;All Rights Reserved</p>
+  </div>
+</footer>
+
+
+<script>
+layui.use('layedit', function(){
+  var layedit = layui.layedit;
+  layedit.build('text'); //建立编辑器
+});
+
+</script>
+</body>
+</html>

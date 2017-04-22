@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/37509/58e6030ef629da0654e3e888.css' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<title>ITOO-登录</title>
+</head>
+<body>
+<!-- 导航条 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="ITOO_introduce.html">ITOO</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="ITOO_introduce.html">首页 <span class="sr-only">(current)</span></a></li> 
+        <li><a href="function.html">功能</a></li>
+        <li><a href="shareWall.html">分享墙</a></li>
+        <li><a href="inspiration.html">团队介绍</a></li>
+        <li><a href="entertainment.html">休闲娱乐</a></li>
+        <li><a href="http://wpa.qq.com/msgrd?v=1&uin=3313087113&site=qq&menu=yes">服务： qq联系</a></li>
+        <li><a href="ITOO_introduce.html">登出</a></li>
+        <li><a href="register.html">注册</a></li>
+      </ul>     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- 登录表格 -->
+<div class="login-table">
+  <div class="login">
+    <h1>用户登录</h1>
+    <hr>
+  </div>
+  <form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputMember1" class="col-sm-2 control-label">账号</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputMember1" placeholder="请输入账号">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword1" class="col-sm-2 control-label">密码</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword1" placeholder="请输入密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-9">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">记住我
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary" onclick="window.open('blog.html')">登录</button>
+      <a href="">忘记密码?</a><a href="register.html">注册</a>
+    </div>
+  </div>
+  <hr/>
+  <!-- 使用第三方登录 -->
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-9">
+      <button type="submit" class="btn btn-default btn-lg log1">使用 微信 登录</button>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-9">
+      <button type="submit" class="btn btn-default btn-lg log1">第三方账号登录</button>
+    </div>
+  </div>
+</form>
+</div>
+
+</body>

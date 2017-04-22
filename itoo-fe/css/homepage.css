@@ -1,0 +1,145 @@
+*{
+	padding: 0;
+	margin: 0;	
+}
+body{
+	background: #f2f2f2;
+}
+/*导航条 左边*/
+.navbar{
+	background-color: #b5caa0;
+	border-radius: 0;
+}
+.head-img .img-circle{
+	height: 30px;
+	width: 30px;
+}
+.head-img .head-name{
+	font-size: 16px;
+	margin-left: -2px;
+}
+.navbar-nav .head-con{
+	font-size: 16px;
+	margin-top: 7px;
+}
+.glyphicon{
+	margin-right: 2px;
+}
+.collapse{
+	line-height: 16px;
+}
+
+/*导航条 右边*/
+.right_nav{
+	font-size: 20px;
+	line-height: 20px;
+	margin-top: 6px;
+}
+.glyphicon-chevron-down{
+	font-size: 12px;
+	margin-left: 3px;
+}
+
+
+.home{
+	height: 100%;
+	position: fixed;
+	height: 900px;
+}
+
+/*左边 内容*/
+.home_table{
+	border: 1px solid #ccc;
+	width: 1200px;
+	margin-left: 20px;
+}
+.table_left{
+	width: 220px;
+	height: 100%;
+	border: 1px solid #ccc;
+}
+.l_timer{
+	height: 50px;
+	line-height: 20px;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px 0 0 3px;
+	background-color: #fff;
+	position: relative;
+	margin-top: 18px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.l_timer .check-btn{
+	width: 70px;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	background-color: #b5caa0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 0 3px 3px 0;
+	top: -1px;
+	right: -1px;
+	cursor: pointer;
+}
+.l_timer .hour{
+	font-weight: bold;
+	font-size: 16px;
+	color: #666;
+}
+.l_timer .date{
+	font-style: italic;
+	font-size: 12px;
+	color: #999;
+}
+.hour,
+.date{
+	margin: 0 auto;
+	margin-left: 25px;
+	margin-top: 4px;
+}
+
+/*成员 团队*/
+.l_member{
+	background-color: #fff;
+	margin-top: 20px;
+	height: 585px;
+	position: relative;	
+}
+.nav-tabs{
+	width: 100%;
+	display: block;
+}
+.l_friends{
+	padding-left: 30px;
+}
+.l_team{
+	padding-left: 30px;
+}
+.tab-pane ul{
+	list-style: none;
+	margin-top: 20px;
+}
+.tab-pane ul li{
+	height: 50px;
+	border-bottom: 1px solid #d5d5d5;
+	margin-top: 14px;
+}
+.tab-pane ul li img{
+	margin-left: 20px;	
+	height: 35px;
+	width: 35px;
+}
+.tab-pane ul li span{
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+/*右边聊天部分*/
+.right_header{
+	border-bottom: 1px solid #d5d5d5;
+	height: 30px;
+}
