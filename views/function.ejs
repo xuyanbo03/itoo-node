@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/37509/58e6030ef629da0654e3e888.css' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/function.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<title>ITOO-功能</title>
+</head>
+<body>
+<!-- 导航条 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index">ITOO</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index">首页 <span class="sr-only">(current)</span></a></li> 
+        <li class="active"><a href="function">功能</a></li>
+        <li><a href="shareWall">分享墙</a></li>
+        <li><a href="inspiration">灵感中心</a></li>
+        <li><a href="entertainment">休闲娱乐</a></li>
+      </ul>
+
+      <form class="navbar-form navbar-left">
+          <% if (user) { %>
+          <button type="submit" class="btn btn-default" onclick="window.open('/post')">发表</button>
+          <button type="submit" class="btn btn-default" onclick="window.open('/logout')">登出</button>
+          <% } else { %>
+          <button type="submit" class="btn btn-default" onclick="window.open('/login')">登录</button>
+          <button type="submit" class="btn btn-default" onclick="window.open('/reg')">注册</button>
+          <% } %>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- 第一栏 -->
+<div class="function1">
+  <div class="text-center">
+    <h1>随时随地连接工作中的一切</h1><br/>
+    <p>无论你想研发一款新产品、制作一个广告案，还是提出一个<br/ class="text-hidden">新项目。你只需要在ITOO上创建一个项目，将<br/ class="text-hidden">所有相关的团队成员添加到项目里。</p><br/>
+    <img src="img/function/function1.png" class="imgs">
+    <h5>向下浏览，了解IToo如何应用于团队协作</h5>
+  </div>
+</div>
+
+<!-- 第二栏 -->
+<div class="function2">
+  <div class="text-center">
+    <h1>直观地了解每一个人的工作进展</h1><br/>
+    <p>在任务板上，你可以很直观地和大家一起推动任务进展。针对每一个任务，你可以分解<br/ class="text-hidden">子任务、搭载附件、设定截止日期，而且也可以随时开展讨论。</p><br/>
+    <img src="img/function/function2.png" class="imgs">
+  </div>
+</div>
+
+<!-- 第三栏 -->
+<div class="function3">
+  <div class="text-center">
+    <h1>分享墙，沟通想法、共享知识</h1><br/>
+    <p>无论身在何处，分享墙是你随时可以与团队沟通想法和总结经验的地方。与来回发送内<br/ class="text-hidden">部邮件相比，在分享墙里发布话题更便于团队讨论和追溯。</p><br/>
+    <img src="img/function/function3.png" class="imgs">
+  </div>
+</div>
+
+<!-- 第四栏 -->
+<div class="function2">
+  <div class="text-center">
+    <h1>这是真的，文件云端无限存储</h1><br/>
+    <p>文件库是一个可以协作的网盘，所有文件都可以随时访问，并发表你的看法。<br/ class="text-hidden">同时，你可以随时上传更新新版本，所有历史<br/ class="text-hidden">版本都会保存。有关文件的一切存储与更新，再也不用邮件抄送了。</p><br/>
+    <img src="img/function/function4.png" class="imgs">
+  </div>
+</div>
+
+<!-- 第五栏 -->
+<div class="function3">
+  <div class="text-center">
+    <h1>安排会议，从未如此简单</h1><br/>
+      <p>在IToos上发起会议也非常简单。日程表可以帮助你安排好你的一整天，与远<br/ class="text-hidden">程的同伴加入视频会议，你还可以订阅日程到手机日历。同时,ITOO的日历视<br/ class="text-hidden">图让日程管理变得更加简单。</p><br/>
+    <img src="img/function/function5.png" class="imgs">
+  </div>
+</div>
+
+<!-- 底部 -->
+<footer>
+  <div>
+    <ul class="list-inline">
+      <li class="li1"><a href="inspiration">关于我们</a></li>
+      <li><a href="http://wpa.qq.com/msgrd?v=1&uin=3313087113&site=qq&menu=yes">联系我们</a></li>
+      <li><a href="login">立即使用</a></li>
+      <li><a href="function">产品应用</a></li>
+      <li><a href="shareWall">分享</a></li>
+    </ul>
+  </div>
+  <div class="text-center">
+    <p>版权所有：ITOO</p>
+    <p>Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2017&nbsp;&nbsp;All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>

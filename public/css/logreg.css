@@ -1,0 +1,31 @@
+.navbar {
+    opacity: 0.8;
+}
+
+.navbar-brand {
+    font-family: 'Malapropism9e7a538e118a64';
+    font-size: 38px;
+}
+
+.login-table {
+    width: 500px;
+    margin-top: 80px;
+    margin: 0 auto;
+}
+
+.login {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.form-horizontal {
+    margin-left: 10px;
+}
+
+.login-table .form-group .log1 {
+    color: green;
+}
+
+.login-table .form-group .log1:hover {
+    background-color: #91Ad70;
+}

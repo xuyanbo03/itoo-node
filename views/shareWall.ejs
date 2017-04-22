@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/38080/58e899c8f629d811b8f74085.css' rel='stylesheet' type='text/css' />
+  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/46723/58e89accf629d811b8f7408b.css' rel='stylesheet' type='text/css' />
+  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/37509/58e6030ef629da0654e3e888.css' rel='stylesheet' type='text/css' />
+  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/19650/58eb49c9f629d817a412b4ab.css' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/shareWall.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<title>ITOO-分享墙</title>
+</head>
+<body>
+<!-- 导航条 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index">ITOO</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index">首页 <span class="sr-only">(current)</span></a></li> 
+        <li><a href="function">功能</a></li>
+        <li class="active"><a href="shareWall">分享墙</a></li>
+        <li><a href="inspiration">灵感中心</a></li>
+        <li><a href="entertainment">休闲娱乐</a></li>
+      </ul>
+
+      <form class="navbar-form navbar-left">
+        <% if (user) { %>
+        <button type="submit" class="btn btn-default" onclick="window.open('/post')">发表</button>
+        <button type="submit" class="btn btn-default" onclick="window.open('/logout')">登出</button>
+        <% } else { %>
+        <button type="submit" class="btn btn-default" onclick="window.open('/login')">登录</button>
+        <button type="submit" class="btn btn-default" onclick="window.open('/reg')">注册</button>
+        <% } %>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ <article>
+        <br><br><br>
+        <% if (success) { %>
+        <div><%= success %></div>
+        <% } %>
+        <% if (error) { %>
+        <div><%= error %> </div>
+        <% } %>
+  <div class="wall-img">
+    <img src="img/shareWall.jpeg" class="img-responsive" alt="Responsive image">
+    <div class="text-center">
+      <h3>ITOO</h3>
+      <h1>分享墙</h1>
+      <h4>团队人员交流分享的好地方</h4>
+    </div>
+  </div>
+
+  <!-- 文章部分 -->
+  <div class="am-g shareBlog">
+      <div class="am-u-lg-8 am-u-sm-centered panel panel-default">
+          <% posts.forEach(function (post, index) { %>
+              <div class="am-panel am-panel-default">
+                  <div class="am-panel-hd panel-heading">
+                      <img src="img/headPicture/headimg1.jpg" class="img-circle">
+                      <p>
+                          <a href="#" class="title">
+                          <%=post.title %>
+                          </a> | 作者：
+                          <a href="#" class="time">
+                          <%=post.name %>
+                          </a> | 日期：
+                          <%=post.time.minute %>
+                      </p>
+                  </div>
+                  <div class="am-panel-bd panel-body">
+                      <p>
+                      <%- post.post %>
+                      </p>
+                  </div>
+              </div>
+          <% }) %>
+      </div>
+  </div>
+  </article>
+
+<!-- 底部 -->
+<footer>
+  <div>
+  <ul class="list-inline">
+    <li class="li1"><a href="team">关于我们</a></li>
+    <li><a href="http://wpa.qq.com/msgrd?v=1&uin=3313087113&site=qq&menu=yes">联系我们</a></li>
+    <li><a href="login">立即使用</a></li>
+    <li><a href="function">产品应用</a></li>
+    <li><a href="shareWall">分享</a></li>
+  </ul>
+  </div>
+  <div class="text-center">
+    <p>版权所有：ITOO</p>
+    <p>Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2017&nbsp;&nbsp;All Rights Reserved</p>
+  </div>
+</footer>
+</body>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/37509/58e6030ef629da0654e3e888.css' rel='stylesheet' type='text/css' />
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/38080/58e899c8f629d811b8f74085.css' rel='stylesheet' type='text/css' /><!-- h2 ITOO -->
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100964/19650/58e99614f629d811b8f740dd.css' rel='stylesheet' type='text/css' /><!-- 娱乐平台 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/entertainment.css">
+    <link rel="stylesheet" type="text/css" href="Game/css/3D.css">
+    <link rel="stylesheet" type="text/css" href="Game/css/tagcloud.css">
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>   
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<title>ITOO-休闲娱乐</title> 
+</head>
+<body>
+<!-- 导航条 -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index">ITOO</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index">首页 <span class="sr-only">(current)</span></a></li> 
+        <li><a href="function">功能</a></li>
+        <li><a href="shareWall">分享墙</a></li>
+        <li><a href="inspiration">灵感中心</a></li>
+        <li class="active"><a href="entertainment">休闲娱乐</a></li>
+      </ul>
+
+      <form class="navbar-form navbar-left">
+        <% if (user) { %>
+        <button type="submit" class="btn btn-default" onclick="window.open('/post')">发表</button>
+        <button type="submit" class="btn btn-default" onclick="window.open('/logout')">登出</button>
+        <% } else { %>
+        <button type="submit" class="btn btn-default" onclick="window.open('/login')">登录</button>
+        <button type="submit" class="btn btn-default" onclick="window.open('/reg')">注册</button>
+        <% } %>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- 魔方 -->
+<div class="entertain">
+  <img src="img/entertainment.jpg" class="img-responsive" alt="Responsive image">
+  <!-- 文字 -->
+  <div class="text-center">
+    <h2>ITOO</h2>
+    <h1>娱乐平台</h1>
+  </div>
+  
+  <div class="mofang">
+    <div class="view">
+        <div class="box">
+            <div class="red-surfaces">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+                <div id="seven"></div>
+                <div id="eight"></div>
+                <div id="nine"></div>
+            </div>
+
+            <div class="blue-surfaces">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+                <div id="seven"></div>
+                <div id="eight"></div>
+                <div id="nine"></div>
+            </div>
+
+            <div class="green-surfaces">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+                <div id="seven"></div>
+                <div id="eight"></div>
+                <div id="nine"></div>
+            </div>
+
+            <div class="white-surfaces">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+                <div id="seven"></div>
+                <div id="eight"></div>
+                <div id="nine"></div>
+            </div>
+
+            <div class="orange-surfaces">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+                <div id="seven"></div>
+                <div id="eight"></div>
+                <div id="nine"></div>
+            </div>
+
+            <div class="yellow-surfaces">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+                <div id="seven"></div>
+                <div id="eight"></div>
+                <div id="nine"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- 文字说明 -->
+<div class="instruct">
+    <p>提醒：点击旋转中的任意标签 就可以进入任一页面</p>
+    <p></p>
+</div>
+
+<!-- 收趣云 -->
+<div class="cloud">
+    <div class="tagCloud" id="tagCloud">
+        <a class="tag" href="Game/2048.html" target="_blank">2048</a>
+        <a class="tag" href="Game/saolei.html" target="_blank">扫雷</a>
+        <a class="tag" href="Game/snake.html" target="_blank">贪吃蛇</a>
+        <a class="tag" href="http://nipponcolors.com/" target="_blank">NIPPON COLOR</a>
+        <a class="tag" href="Game/dafangkuai.html" target="_blank">打方块</a>
+        <a class="tag" href="Game/saolei.html" target="_blank">扫雷</a>
+        <a class="tag" href="Game/2048.html" target="_blank">2048</a>
+        <a class="tag" href="Game/snake.html" target="_blank">贪吃蛇</a>
+        <a class="tag" href="Game/saolei.html" target="_blank">扫雷</a>
+        <a class="tag" href="Game/snake.html" target="_blank">贪吃蛇</a>
+        <a class="tag" href="http://nipponcolors.com/" target="_blank">NIPPON COLOR</a>
+        <a class="tag" href="Game/dafangkuai.html" target="_blank">打方块</a>
+         <a class="tag" href="http://nipponcolors.com/" target="_blank">NIPPON COLOR</a>
+        <a class="tag" href="Game/2048.html" target="_blank">2048</a>
+        <a class="tag" href="Game/2048.html" target="_blank">2048</a>
+        <a class="tag" href="Game/snake.html" target="_blank">贪吃蛇</a>
+    </div>
+    <script src="Game/js/tagcloud.js"></script>
+</div>
+
+<!-- 底部 -->
+<footer>
+    <div>
+    <ul class="list-inline">
+        <li class="li1"><a href="inspiration">关于我们</a></li>
+        <li><a href="http://wpa.qq.com/msgrd?v=1&uin=3313087113&site=qq&menu=yes">联系我们</a></li>
+        <li><a href="login">立即使用</a></li>
+        <li><a href="function">产品应用</a></li>
+        <li><a href="shareWall">分享</a></li>
+    </ul>
+    </div>
+    <div class="text-center">
+        <p>版权所有：ITOO</p>
+        <p>Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2017&nbsp;&nbsp;All Rights Reserved</p>
+    </div>
+</footer>
+</body>

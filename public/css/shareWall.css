@@ -1,0 +1,104 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.navbar{
+	opacity: 0.8;
+}
+.navbar-brand{
+	font-family: 'Malapropism9e7a538e118a64';
+	font-size: 38px;
+}
+.wall-img{
+	position: relative;
+}
+.wall-img .img-responsive{
+	width: 100%;
+	max-height: 500px;
+	position: relative;
+	opacity: 0.5;
+}
+.wall-img .text-center{
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	margin: 0 auto;
+	width: 70%;
+}
+.text-center h3{
+	font-family:'Moonpie9f1c1ff2318a64';
+	font-size: 60px;
+}
+.text-center h1{
+	font-family:'JuzhenFang9f1c5f53d18a64';
+	font-size: 40px;
+}
+.text-center h4{
+	font-family:'jdlibianjian9fc41814618a64';
+}
+
+/*shareBlog*/
+.shareBlog{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.shareBlog .img-circle{
+	height: 35px;
+	width: 35px;
+}
+.shareBlog .panel-heading .title{
+	margin-left: 15px;
+	margin-right: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+@media (max-width: 768px) {
+	.text-center h3{
+		font-size: 35px;
+	}
+	.text-center h1{
+		font-size: 30px;
+	}
+	.shareBlog{
+		width: 80%;
+	}
+}
+
+
+/*底部*/
+footer{
+	background-color: #333;
+	width: 100%;
+	height: 150px;
+	position: relative;
+	text-align: center;
+	margin-top: 10em;
+}
+footer .list-inline{
+	padding-top: 20px;
+}
+footer .list-inline li{
+	text-decoration: none;
+	font-size: 16px;
+	margin-right: 30px;
+}
+footer a{
+	color: #fff;
+}
+footer a:hover{
+	color: #d5d5d5;
+	text-decoration: none;
+}
+
+footer .text-center{
+	color: #999;
+	font-size: 12px;
+	margin-top: 20px;
+}
+@media (max-width: 768px) {
+	footer .list-inline li{
+		font-size: 12px;
+		margin-right: 10px;
+	}
+}

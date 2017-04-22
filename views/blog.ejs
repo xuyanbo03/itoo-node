@@ -1,0 +1,26 @@
+<%- include header %>
+
+    <div class="blog_header">
+        <img src="img/blog.jpg" class="img-responsive" alt="Responsive image">
+    </div>
+
+    <!-- 写文章部分 -->
+    <div class="am-g">
+        <div class="am-u-lg-8 am-u-sm-centered content">
+            <form method="post" class="am-form"><span>标题:</span><br/>
+                <input type="text" name="title" placeholder="请输入标题"><br/>
+                <span>正文:</span><br/>
+                <textarea id="text" style="display: none;" name="post"></textarea><br/>
+                <input type="submit" value="发表" class="am-btn am-btn-primary btn btn-success">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        layui.use('layedit', function(){
+        var layedit = layui.layedit;
+        layedit.build('text');
+        });
+    </script>
+
+<%- include footer %>
